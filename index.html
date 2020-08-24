@@ -36,15 +36,29 @@
   </div>
 </nav>
 <div class="jumbotron" style="background-image: url(images/giphy.gif); background-size: 55%; background-repeat: no-repeat; background-position: center;">
- <input id="searchtext" type="text" placeholder="Search...">
-<button id="searchgifs" type="submit" onClick="getData()">Search Gifs!</button>
+  <form>
+    <div class="form-group">
+      <label for="">Search For Giphys</label>
+      <input type="text" class="form-control" id="input" placeholder="Search...">
+    </div>
+    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+  </form>
+  </div>
+  <br>
+  <div class="container">
+    <div class="results">
+      <div class="panel panel-default">
+        <div class="panel-body img-body">
+          
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="flex-container">  
-  <div class="inner"></div>
-</div>
-</div>
-<footer>
 
+
+<footer>
+<div>&copy; 2020 </div>
 </footer>
 </body>
 </html>

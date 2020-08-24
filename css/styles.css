@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
+@import url("https://fonts.googleapis.com/css2?family=Notable");
 * {
   margin: 0;
   padding: 0;
@@ -6,14 +7,19 @@
           box-sizing: border-box;
 }
 
-html,
-body {
-  width: 100%;
-  height: 100%;
+.img-box {
+  height: 150px;
+  width: 150px;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+input {
+  font-family: 'Notable';
 }
 
 body {
-  background: #252525;
+  background: white;
 }
 
 .jumbotron {
@@ -30,11 +36,18 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  text-align: center;
+  flex-wrap: wrap;
 }
 
-button {
-  background-color: yellowgreen;
+.navbar {
+  color: white;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: #242424;
+  font-family: 'Inconsolata';
+  padding: 50px;
 }
 /*# sourceMappingURL=styles.css.map */
