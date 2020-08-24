@@ -37,18 +37,20 @@
 </nav>
 <div class="jumbotron" style="background-image: url(images/giphy.gif); background-size: 55%; background-repeat: no-repeat; background-position: center;">
   <form>
-    <div class="form-group">
-      <label for="">Search For Giphys</label>
-      <input type="text" class="form-control" id="input" placeholder="Search...">
+    <div class=" col col-12 form-group">
+      <label for="input">Search For Giphys Below!</label>
+        <div class="form-inline">
+          <input type="text" class="col col-6 offset-3 form-control" id="input" placeholder="Search...">
+          <button type="submit" class="btn btn-success" id="submit">Submit</button>
+        </div>
     </div>
-    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
   </form>
-  </div>
+ </div>
   <br>
-  <div class="container">
+  <div class="flex-container">
     <div class="results">
       <div class="panel panel-default">
-        <div class="panel-body img-body">
+        <div class="panel-body img-body img-responsive">
           
         </div>
       </div>

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
 @import url("https://fonts.googleapis.com/css2?family=Notable");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower");
 * {
   margin: 0;
   padding: 0;
@@ -8,18 +9,36 @@
 }
 
 .img-box {
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   border: 1px solid black;
   margin: 5px;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 input {
+  font-family: 'Indie Flower';
+  text-align: center;
+}
+
+label {
   font-family: 'Notable';
+  color: #f03333;
+  font-size: 1em;
+  opacity: 0.75;
 }
 
 body {
   background: white;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .jumbotron {
@@ -29,6 +48,9 @@ body {
   border-color: black;
   background-size: cover;
   background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .flex-container {
@@ -39,8 +61,8 @@ body {
   flex-wrap: wrap;
 }
 
-.navbar {
-  color: white;
+nav {
+  background-color: #242424;
 }
 
 footer {
@@ -49,5 +71,28 @@ footer {
   background-color: #242424;
   font-family: 'Inconsolata';
   padding: 50px;
+}
+
+.flex-container {
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 600px) {
+  .panel-body img {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .panel-body img {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
