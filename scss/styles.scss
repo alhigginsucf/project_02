@@ -54,6 +54,9 @@ form {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
@@ -68,13 +71,6 @@ footer {
     background-color: white;
     padding: 50px;
     font-family: 'Indie Flower';
-}
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 }
 
 @media screen and (max-width: 320px) {
