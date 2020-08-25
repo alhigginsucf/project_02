@@ -34,6 +34,7 @@ body {
 form {
     display: flex;
     align-content: center;
+    opacity: .85;
 }
 
 .jumbotron {
@@ -44,6 +45,7 @@ form {
     background-size: cover;
     background-color: white;
     justify-content: center;
+    height: 200px;
 }
 
 .flex-container {
@@ -55,31 +57,42 @@ form {
 }
 
 nav {
-    background-color: #242424;
+    color: white;
+    position: fixed;
 }
 
 footer {
     text-align: center;
-    color: white;
-    background-color: #242424;
-    font-family: 'Inconsolata';
+    color: limegreen;
+    background-color: white;
     padding: 50px;
+    font-family: 'Indie Flower';
 }
 
 .flex-container {
     border: 1px solid black;
 }
 
+@media screen and (max-width: 320px) {
+    .img-box {
+        flex: 100%;
+    }
+}
+
 @media screen and (max-width: 600px) {
-    .panel-body img {
+    .img-box {
         flex: 100%;
         max-width: 100%;
         text-align: center;
     }
+    .navbar {
+        float: none;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 800px) {
-    .panel-body img {
+    .img-box {
         flex: 50%;
         max-width: 50%;
     }
