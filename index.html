@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8 width=device-width, initial-scale=1.0">
+<!--Project Title and Bootstrap/jQuery CDNs-->
 <title>Project 02</title>
+<meta charset="UTF-8 width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="../scripts/main.js"></script>
 <link rel="stylesheet" href="css/styles.css">
-
 </head>
 <body>
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+<!--navbar begins-->
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="navbar-brand" href="#">GIPHY SEARCH API</a>
   <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
       aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -33,15 +34,18 @@
         </div>
       </li>
     </ul>
+    <!--input and button for giphy search-->
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" id="input" placeholder="Search">
+      <input class="form-control mr-sm-2" type="text" id="input" placeholder="Search...">
       <button class="btn btn-outline-success my-2 my-sm-0" id="submit" type="submit">Search Giphy</button>
     </form>
   </div>
 </nav>
+<!--navbar ends-->
 <div class="jumbotron" style="background-image: url(images/giphy.gif); background-size: 55%; background-repeat: no-repeat; background-position: center;">
  </div>
   <br>
+  <!--output area for images pulled from giphy using API key-->
   <div class="flex-container">
     <div class="results">
       <div class="panel panel-default">

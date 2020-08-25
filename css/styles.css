@@ -66,6 +66,7 @@ form {
 nav {
   color: white;
   position: fixed;
+  font-family: 'Notable';
 }
 
 footer {
@@ -78,6 +79,14 @@ footer {
 
 .flex-container {
   border: 1px solid black;
+}
+
+@media screen and (max-width: 320px) {
+  .img-box {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
