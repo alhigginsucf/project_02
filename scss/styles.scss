@@ -32,7 +32,6 @@ body {
 }
 
 form {
-    display: flex;
     align-content: center;
     opacity: .85;
 }
@@ -66,6 +65,7 @@ nav {
 }
 
 footer {
+    display: flex;
     text-align: center;
     color: limegreen;
     background-color: white;
@@ -75,9 +75,10 @@ footer {
 
 @media screen and (max-width: 320px) {
     .flex-container {
-        flex: 100%;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
+    .img-box {}
 }
 
 @media screen and (max-width: 600px) {
@@ -85,10 +86,6 @@ footer {
         flex: 100%;
         max-width: 100%;
         text-align: center;
-    }
-    .navbar {
-        float: none;
-        width: 100%;
     }
 }
 

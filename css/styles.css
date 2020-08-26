@@ -34,9 +34,6 @@ body {
 }
 
 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
   opacity: .85;
@@ -77,6 +74,9 @@ nav {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
   color: limegreen;
   background-color: white;
@@ -86,12 +86,13 @@ footer {
 
 @media screen and (max-width: 320px) {
   .flex-container {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -102,10 +103,6 @@ footer {
             flex: 100%;
     max-width: 100%;
     text-align: center;
-  }
-  .navbar {
-    float: none;
-    width: 100%;
   }
 }
 

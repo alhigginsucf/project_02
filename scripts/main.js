@@ -18,9 +18,9 @@ $(function() {
 
     function getGiphys(inputVal) {
         $.get('http://api.giphy.com/v1/gifs/search?q=' + inputVal + '&api_key=' +
-                apiKey + '&limit=24')
+                apiKey + '&limit=30')
             .done(function(data) {
-                for (var i = 0; i < 24; i++) {
+                for (var i = 0; i < 30; i++) {
                     var gifImg = data.data[i].images.original.url;
                     createBox(gifImg);
                 }
@@ -31,7 +31,6 @@ $(function() {
         var $newImg = $('<img>');
         $newImg.attr('src', gifImg);
         $newImg.addClass('img-box');
-
         $imgBody.append($newImg);
 
     }
