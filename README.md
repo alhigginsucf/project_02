@@ -1,4 +1,4 @@
-# project_02
+# Giph Search Engine
 Alexander Higgins
 Project 02- utilized mutliple technologies learned over the past 9 weeks to build a functioning
 search engine using a GIPHY API key. jQuery, using the API key, retrieves data from GIPHY to inturn display on the webpage depending on what is placed into the input. The technologies used in this project are as follows: .html, SASS converted into .css, .js (jQuery). HTML was used to build the webpage, SASS was used to
